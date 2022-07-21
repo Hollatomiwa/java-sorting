@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Ascend{
+    public static void main (String [] args){
+        Scanner num = new Scanner(System.in);
+        ArrayList<Integer> ascend = new ArrayList<>();
+
+        System.out.println("Numbers of values you want to enter");
+        int size = num.nextInt();
+
+        System.out.println("Input Numbers");
+        for (int i = 0; i < size; i++) {
+
+            ascend.add(num.nextInt());
+        }
+        Collections.sort(ascend);
+        System.out.println(ascend);
+    }
+}
